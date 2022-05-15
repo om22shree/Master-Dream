@@ -1,0 +1,6 @@
+##** Good questions for practice and revision **## :-
+
+1) PalindromePermutation
+2) OneAway
+3) ZeroMatrix
+4) RotateString (beautiful logic : yx is always a substring of xyxy)
