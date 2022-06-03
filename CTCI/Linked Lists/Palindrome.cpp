@@ -25,3 +25,4 @@ bool isPalindrome(Node head) {
     }
     return true;
 }
+
