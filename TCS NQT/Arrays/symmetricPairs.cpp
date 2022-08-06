@@ -15,5 +15,6 @@ int main() {
             m[first] = second;
         }
     }
+    cout << " " << endl;
     return 0;
 }
