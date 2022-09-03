@@ -14,3 +14,5 @@ int bs(int *arr, int l, int r, int x) {
         }
     }
 }
+
+Time complexity = O(logn)
