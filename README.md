@@ -1,2 +1,2 @@
 # Dream-Master
-Goal : 18 CTC with 9 in-hand
+Goal : 18 CTC with 12 in-hand
