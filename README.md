@@ -1,2 +1,2 @@
 # Dream-Master
-This repository is for all things related to competitive programming and becoming a master on CodeForces.
+Goal : 18 CTC with 9 in-hand
