@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define v 5
+#define INF 9999999
+int G[v][v] = {
+    {0, 9, 75, 0, 0},
+    {9, 0, 95, 19, 42},
+    {75, 95, 0, 51, 66},
+    {0, 19, 51, 0, 31},
+    {0, 42, 66, 31, 0}
+};
+
+int main() {
+    int no_edge;
+    int selected[v];
+    memset(selected, false, sizeof(selected));
+    no_edge = 0;
+    selected[0] = true;
+    int x, y;
+    cout << "Edge : Weight" << endl;
+    while(no_edge < v-1) {
+        int min = INF;
+        x = 0;
+        y = 0;
+        for (int i = 0; i < v; i++) {
+            if(selected[i])
+                for (int j = 0; j < v; j++)
+                    if(!selected[j] && G[i][j])
+                        if(min > G[i][j]) {
+                            min = G[i][j];
+                            x = i;
+                            y = j;
+                        }
+        }
+        cout << x << " - " << y << " : " << G[x][y] << endl;
+        selected[y] = true;
+        no_edge++;
+    }
+
+    return 0;
+}
