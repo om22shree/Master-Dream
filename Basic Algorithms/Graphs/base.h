@@ -11,6 +11,8 @@ public:
     void addEdge(int src, int dest);
     void DFS(int vertex);
     void BFS(int startVertex);
+    void topSortUtil(int v, bool visited[], stack<int> &Stack);
+    void topSort();
 };
 
 Graph :: Graph(int vertices) {
