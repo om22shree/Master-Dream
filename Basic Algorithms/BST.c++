@@ -35,6 +35,7 @@ struct node* insert(struct node* root, int key) {
 }
 
 int main() {
+    // Trial run
     struct node *root = NULL;
     root = insert(root, 50);
     insert(root, 40);
@@ -43,6 +44,6 @@ int main() {
     insert(root, 20);
     insert(root, 10);
     inorder(root);
-    
+    cout << endl;
     return 0;
 }
