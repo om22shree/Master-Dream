@@ -24,14 +24,17 @@ int main() {
         x = 0;
         y = 0;
         for (int i = 0; i < v; i++) {
-            if(selected[i])
-                for (int j = 0; j < v; j++)
-                    if(!selected[j] && G[i][j])
+            if(selected[i]) {
+                for (int j = 0; j < v; j++) {
+                    if(!selected[j] && G[i][j]) {
                         if(min > G[i][j]) {
                             min = G[i][j];
                             x = i;
                             y = j;
                         }
+                    }
+                }
+            }
         }
         cout << x << " - " << y << " : " << G[x][y] << endl;
         selected[y] = true;
