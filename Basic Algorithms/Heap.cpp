@@ -20,5 +20,13 @@ int main() {
     for(auto it : v)
         cout << it << " ";
     cout << endl;
+    // To check if a vector is heap
+    is_heap(v.begin(), v.end()) ? cout << "Vetor is heap" << endl : cout << "Vector is not heap" << endl;
+    // pointer upto which the vector is heap
+    auto it = is_heap_until(v.begin(), v.end());
+    for (auto it1 = v.begin(); it1 != it; it1++) {
+        cout << *it1 << " ";
+    }
+    cout << endl;
     return 0;
 }
