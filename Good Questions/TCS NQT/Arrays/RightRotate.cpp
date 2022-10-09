@@ -1,3 +1,4 @@
+// Right rotate the array by "k" elements.
 #include<bits/stdc++.h>
 using namespace std;
 
