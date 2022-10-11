@@ -1,3 +1,4 @@
+// Return the index where sum upto i from left is == sum from i to end.
 #include<bits/stdc++.h>
 using namespace std;
 
