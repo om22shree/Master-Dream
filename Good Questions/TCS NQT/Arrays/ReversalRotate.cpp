@@ -1,3 +1,4 @@
+// Rotate an array right by k elements using reversal algorithm.
 #include<bits/stdc++.h>
 using namespace std;
 
