@@ -2,13 +2,16 @@
 using namespace std;
 
 int equi(int *arr, int n) {
-    int sum = 0, loc = 0;
+    int ls = 0;
+    int totalSum = 0;
+    int rs = totalSum;
     for (int i = 0; i < n; i++)
-        sum += arr[i];
+        totalSum += arr[i];
     for (int i = 0; i < n; i++) {
-        loc += arr[i];
-        if(loc == (sum-arr[i])/2)
+        rs -= arr[i];
+        if(ls == rs)
             return i;
+        ls += arr[i];
     }
     return -1;
 }
