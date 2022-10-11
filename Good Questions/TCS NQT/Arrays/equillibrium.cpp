@@ -4,9 +4,9 @@ using namespace std;
 int equi(int *arr, int n) {
     int ls = 0;
     int totalSum = 0;
-    int rs = totalSum;
     for (int i = 0; i < n; i++)
         totalSum += arr[i];
+    int rs = totalSum;
     for (int i = 0; i < n; i++) {
         rs -= arr[i];
         if(ls == rs)
