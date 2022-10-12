@@ -1,3 +1,4 @@
+// Prime numbers within a given range.
 #include<bits/stdc++.h>
 using namespace std;
 
