@@ -1,6 +1,7 @@
-#include<iostream>
+// Program to print palindromic numbers in a given range.
+#include<bits/stdc++.h>
 using namespace std;
- 
+  
 int palindrome(int n) {
     int temp = n, rev = 0;
     while(temp > 0) {
