@@ -1,4 +1,5 @@
 // In how many permutations can 'p' people occupy 'r' seats.
+// Formula is : p*(p-1)*(p-2).......... * (p-r+1).
 #include<bits/stdc++.h>
 using namespace std;
 
