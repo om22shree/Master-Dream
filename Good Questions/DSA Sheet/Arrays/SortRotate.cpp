@@ -1,3 +1,11 @@
+// Check if the given array can be attained by rotating a sorted array any number of times.
+/*
+    Logic :-
+        arr = {4, 5, 1, 2, 3};
+        arr[i-1] > arr[i] can happen only once if the array is rotated.
+        if(arr[i] > arr[arr.size()-1]) this means that array is rotated (max is first).
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
