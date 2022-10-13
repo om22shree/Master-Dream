@@ -1,21 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool check(vector<int>& nums) {
-    if(nums.size() == 1)
-        return true;
-    int k = 0;
-    for (int i = 1; i < nums.size(); i++) {
-        if(nums[i-1] > nums[i]) {
-            if(nums[nums.size() - 1] > nums[0])
-                return false;
-            k++;
-        }  
+int subarraySum(vector<int>& nums, int k) {
+    int flag = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        int sum = 0;
+        for (int j = i; j < nums.size(); j++) {
+            sum += nums[j];
+            if(sum == k)
+                flag++;
+        }
     }
-    return k <= 1;
-}
-
-int main() {
-    vector<int> x = {3, 5, 4, 1, 2};
-    cout << check(x) << endl;
+    return flag;
 }
