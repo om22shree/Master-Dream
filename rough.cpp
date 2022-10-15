@@ -1,25 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool searchMatrix(vector<vector<int>>& matrix, int target) {
-    int m = matrix.size();
-    int n = matrix[0].size();
-    for (int i = 1; i < m; i++) {
-        if(matrix[i][0] == target || matrix[i][n-1] == target)
-            return true;
-        else if(matrix[i][0] > target) {
-            for (int j = 0; j < n; j++) {
-                if(matrix[i-1][j] == target)
-                    return true;
-            }
-            return false;
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> m;
+    for(int i = 0; i < nums.size(); i++) {
+        int x = target - nums[i];
+        if (m.find(x) != m.end()) {
+            return {i, m[x]};
         }
-        else {
-            for (int i = 0; i < n - 1; i++) {
-                if(matrix[0][i] ==  target)
-                    return true;
-            }
-            return false;
-        }
+        m[nums[i]] = i;
     }
+    return {};
+}
+
+int main() {
+    vector<int> nums = {1, 2, 3, 4};
+    int target = 7;
+    vector<int> ans = twoSum(nums, target);
+    for(auto it : ans)
+        cout << ans[it] << " ";
+    cout << endl;
+    return 0;
 }
