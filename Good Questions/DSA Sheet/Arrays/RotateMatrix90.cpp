@@ -1,3 +1,8 @@
+// Image is represented as 2D matrix. Rotate it by 90 degrees.
+/*
+Logic :-
+    Transpose the matrix and then reverse the rows.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 

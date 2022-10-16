@@ -1,3 +1,8 @@
+// Find the longest consecutive sewuence in an array.
+/*
+Logic :-
+    Insert elements of the array into a hashset and then find arr[i]+1 and arr[i]-1.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
