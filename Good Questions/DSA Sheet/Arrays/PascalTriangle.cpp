@@ -1,0 +1,24 @@
+// Return the Pascal's traingle upto "n".
+/*
+Logic :-
+        1
+    1   2   1
+ 1    3   3    1
+arr[i][0] = arr[0][i] = 1;
+arr[i][j] = arr[i-1][j-1] + arr[i-1][j];
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<vector<int>> generate(int n) {
+    vector<vector<int>> r(n);
+    for(int i = 0; i < n; i++) {
+        r[i].resize(i+1);
+        r[i][0] = r[i][i] = 1;
+        for(int j = 1; j < i; j++) {
+            r[i][j] = r[i-1][j-1] + r[i-1][j];
+        }
+    }
+    return r;
+}

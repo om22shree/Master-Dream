@@ -1,3 +1,9 @@
+// Print the matrix in spiral order.
+/*
+Logic :-
+    assign four pointers(top, left, right, bottom) to the matrix. 
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
