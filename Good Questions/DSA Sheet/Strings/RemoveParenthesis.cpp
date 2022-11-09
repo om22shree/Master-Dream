@@ -1,5 +1,9 @@
 // Remove useless parenthesis from a given string consisting of braces.
-
+/*
+Logic :-
+    Input every '(' into a stack, neutralize top with ')'.
+    redundants brackets will be stored in the stack and neve added to the string.
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
