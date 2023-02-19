@@ -3,36 +3,37 @@ import java.util.*;
 public class ImplementLinkedList {
     public static void main(String args[]) {
         // Inintialization:-
-        Queue<Integer> q = new LinkedList<Integer>();
-        LinkedList<Integer> q1 = new LinkedList<Integer>();
+        LinkedList<Integer> ll = new LinkedList<Integer>();
 
-        // Offer function:-
-        q.offer(12);
-        q.offer(42);
-        q.offer(56);
-        q.offer(72);
-        System.out.println(q);
+         // Add function:-
+        ll.add(12);
+        ll.add(42);
+        ll.add(56);
+        ll.add(72);
+        ll.addFirst(100);
+        ll.addLast(200);
+        System.out.println(ll);
         
-        // Using the poll function:-
-        System.out.println(q.poll());
-        System.out.println(q.poll());
+        // Accessing the first and last element with function:-
+        System.out.println(ll.getFirst());
+        System.out.println(ll.getLast());
         
         // Using the peek function:-
-        System.out.println(q.peek());
+        System.out.println(ll.peek());
 
-         // Offer function:-
-        q1.offer(12);
-        q1.offer(42);
-        q1.offer(56);
-        q1.offer(72);
-        System.out.println(q1);
-        
-        // Using the poll function:-
-        System.out.println(q1.poll());
-        System.out.println(q1.poll());
-        
-        // Using the peek function:-
-        System.out.println(q1.peek());
+        // Size funciton:-
+        System.out.println(ll.size());
 
+        // Removing elements:-
+        ll.remove(1);
+        ll.removeLast();
+        ll.removeFirst();
+        System.out.println(ll);
+
+        // Iterating over the linkedlist:-
+        for (Integer ele : ll)
+            System.out.println(ele);
+        for (int i = 0; i < ll.size(); i++)
+            System.out.println(ll.get(i));
     }
 }
