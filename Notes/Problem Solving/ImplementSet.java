@@ -41,5 +41,7 @@ public class ImplementSet {
             System.out.println(s);
         
 
+
+        // TreeSet is just a sorted set
     }
 }
