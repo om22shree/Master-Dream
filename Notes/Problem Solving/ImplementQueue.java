@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -5,7 +6,8 @@ public class ImplementQueue {
     public static void main(String args[]) {
         // Inintialization:-
         Queue<Integer> q = new LinkedList<Integer>();
-        
+        LinkedList<Integer> q1 = new LinkedList<Integer>();
+
         // Offer function:-
         q.offer(12);
         q.offer(42);
@@ -19,6 +21,20 @@ public class ImplementQueue {
         
         // Using the peek function:-
         System.out.println(q.peek());
+
+         // Offer function:-
+        q1.offer(12);
+        q1.offer(42);
+        q1.offer(56);
+        q1.offer(72);
+        System.out.println(q1);
+        
+        // Using the poll function:-
+        System.out.println(q1.poll());
+        System.out.println(q1.poll());
+        
+        // Using the peek function:-
+        System.out.println(q1.peek());
 
     }
 }
