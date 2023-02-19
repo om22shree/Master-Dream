@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ImplementQueue {
+public class ImplementLinkedList {
     public static void main(String args[]) {
         // Inintialization:-
         Queue<Integer> q = new LinkedList<Integer>();
