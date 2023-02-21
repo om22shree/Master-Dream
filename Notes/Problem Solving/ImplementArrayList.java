@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javax.swing.plaf.synth.SynthSplitPaneUI;
-
 // Lists :-
 class ImplementArrayList {
     public static void main(String[] args) {
