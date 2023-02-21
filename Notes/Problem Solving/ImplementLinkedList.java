@@ -60,5 +60,11 @@ public class ImplementLinkedList {
         for (Object ele : s)
             System.out.println(ele);
 
+        // Sorting the linkedlist :-
+        s.addFirst(new Student(86, "Sinha"));
+        s.addFirst(new Student(420, "Rohit"));
+        Collections.sort(s);
+        System.out.println(s);
+
     }
 }
