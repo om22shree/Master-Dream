@@ -42,5 +42,24 @@ class ImplementArrayList {
         list.remove(2);
         System.out.println(list);
 
+
+        // Array of a custom class :-
+        List<Student> s = new ArrayList<Student>();
+        
+        // Addition of custom elements into a class
+        s.add(new Student(77, "Om"));
+        s.add(new Student(70, "Anand"));
+        
+        // Printing the array of a custom class :-
+        System.out.println(s);
+        
+        // Iteration over a custom array :-
+        for (Object ele : s)
+            System.out.println(ele);
+        
+        // Removal of an element from custom array :-
+        s.remove(1);
+        System.out.println(s);
+
     }
 }

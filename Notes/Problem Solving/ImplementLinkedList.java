@@ -35,5 +35,30 @@ public class ImplementLinkedList {
             System.out.println(ele);
         for (int i = 0; i < ll.size(); i++)
             System.out.println(ll.get(i));
+
+
+        // LinkedList of a custom class :-
+        LinkedList<Student> s = new LinkedList<Student>();
+        
+        // Adding elements to the front of the linkedlist :-
+        s.addFirst(new Student(77, "Om"));
+        s.addFirst(new Student(420, "Rohit"));
+
+        // Addiing from the last of the linkedlist :-
+        s.addLast(new Student(70, "Anand"));
+
+        // Printning out the linkedlist :-
+        System.out.println(s);
+
+        // Removal from the linkedlist :-
+        s.removeFirst();
+        System.out.println(s);
+        s.removeLast();
+        System.out.println(s);
+
+        // Traversing the linkedlist :-
+        for (Object ele : s)
+            System.out.println(ele);
+
     }
 }
