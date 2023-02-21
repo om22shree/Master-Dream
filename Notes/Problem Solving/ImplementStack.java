@@ -13,5 +13,25 @@ public class ImplementStack {
 
         // Pop function:-
         System.out.println(st.pop());
+
+
+        // Stack of a custom class :-
+        Stack<Student> s = new Stack<Student>();
+        
+        // Push into stack of a custom class :-
+        s.push(new Student(77, "Om"));
+        s.push(new Student(70, "Anand"));
+        s.push(new Student(420, "Rohit"));
+
+        // Printing out the custom stack :-
+        System.out.println(s);
+
+        // Pop from a stack of custom class :-
+        System.out.println(s.peek());
+        System.out.println(s.pop());
+
+        // Iterating over the custom stack :-
+        for(Object ele : s)
+            System.out.println(ele);
     }
 }
