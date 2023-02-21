@@ -39,9 +39,24 @@ public class ImplementSet {
         System.out.println(lset);
         for (String s : lset)
             System.out.println(s);
-        
-
+    
 
         // TreeSet is just a sorted set
+
+
+
+        // HashSet of a custom class in Java :-
+        HashSet<Student> s = new HashSet<Student>();
+        s.add(new Student(77, "Om"));
+        s.add(new Student(70, "Anand"));
+        s.add(new Student(77, "Rohit"));
+
+        // Printing the custom class hashset :-
+        System.out.println(s);
+
+        // Iterating over the custom class hashset :-
+        for (Object ele : s)
+            System.out.println(ele);
+         
     }
 }
