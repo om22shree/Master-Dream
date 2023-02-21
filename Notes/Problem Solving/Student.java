@@ -1,6 +1,6 @@
-import java.util.Objects;
+import java.util.*;
 
-public class Student {
+public class Student implements Comparable<Student>{
     Integer roll;
     String name;
 
@@ -18,6 +18,11 @@ public class Student {
     public boolean equals(Object o) {
         Student s = (Student) o;
         return s.roll == this.roll && this.getClass() == o.getClass();
+    }
+
+    @Override
+    public int compareTo(Student o1) {
+        return this.roll - o1.roll;
     }
 
     @Override

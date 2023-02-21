@@ -24,6 +24,20 @@ public class ImplementQueue {
         // Iteration :-
         for (Object ele : p)
             System.out.println(ele);
+
+        // Implement queue of a custom class :_
+        PriorityQueue<Student> s = new PriorityQueue<Student>();
+        s.add(new Student(77, "Om"));
+        s.add(new Student(70, "Anand"));
+        s.add(new Student(420, "Rohit"));
+        s.add(new Student(86, "Sinha"));
+        
+        // Print out the custom class queue :-
+        System.out.println(s);
+
+        // Iterate over the custom class queue :-
+        for (Object ele : s)
+            System.out.println(ele);
         
     }   
 }

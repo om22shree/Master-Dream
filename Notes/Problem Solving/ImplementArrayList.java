@@ -1,5 +1,7 @@
 import java.util.*;
 
+import javax.swing.plaf.synth.SynthSplitPaneUI;
+
 // Lists :-
 class ImplementArrayList {
     public static void main(String[] args) {
@@ -61,5 +63,11 @@ class ImplementArrayList {
         s.remove(1);
         System.out.println(s);
 
+       
+        // Sorting the custom list :-
+        s.add(new Student(86, "Sinha"));
+        s.add(new Student(70, "Anand"));
+        Collections.sort(s);
+        System.out.println(s);
     }
 }
