@@ -47,7 +47,7 @@ m.clear()
 m = {i : 2*i for i in range(5)}
 print(m)
 
-t = tuple([1, 2, 3, 4, 5])
-m[t] = "Tuple"
-print(m)
+# Sorting the dict :-
+res = sorted(m)
+print(str(res))
 
