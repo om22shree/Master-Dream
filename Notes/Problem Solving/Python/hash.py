@@ -51,3 +51,8 @@ print(m)
 res = sorted(m)
 print(str(res))
 
+## Remember that lists cant act as keys for maps, therefore, we use tuples :-
+t = tuple(["OM SHREE", "ANAND", "SOURAV"])
+m[t] = "Names in caps"
+print(m)
+
