@@ -33,6 +33,20 @@ class Node :
         if self.right is not None :
             self.right.tprint()
 
+    def preOrder(self) -> None :
+        print(self.data)
+        if self.left is not None :
+            self.left.preOrder()
+        if self.right is not None :
+            self.right.preOrder()
+
+    def postOrder(self) -> None :
+        if self.left is not None :
+            self.left.postOrder()
+        if self.right is not None :
+            self.right.postOrder()
+        print(self.data)
+
 # Initialization of the tree :-
 root = Node(12)
 e1 = Node(3)
@@ -43,7 +57,16 @@ e3 = Node(100)
 root.tinsert(e3)
 
 # Print the tree :-
+# Inorder traversal :-
+print("Inorder :-")
 root.tprint()
+# PreOrder traversal :-
+print("Pre order :-")
+root.preOrder()
+# PostOrder traversal :-
+print("Post order :-")
+root.postOrder()
+
 
 
 
