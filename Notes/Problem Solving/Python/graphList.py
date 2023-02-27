@@ -1,57 +1,23 @@
-class Graph :
-    # Constructor :-
-    def __init__(self, gdict = None) -> None:
-        if gdict is None :
-            gdict = {}
-        self.gdict = gdict
-    
-    # Edges of the graph :-
-    def vrtxList(self) -> None :
-        print(list(self.gdict.keys()))
+# List representation of a graph using dict
+graph = {}
 
-    # Adding a vertex to the graph :-
-    def addVrtx(self, x) -> None :
-        if x not in self.gdict :
-            self.gdict[x] = []
+# Total no. of nodes 
+n = 6
 
-    # Adding an edge to the graph :-
-    def addEdge(self, u, v) -> None :
-        if u not in self.gdict :
-            self.addVrtx(u)
-        else :
-            if v not in self.gdict[u] :
-                self.gdict[u].append(v)
-    
-    # Printing the edge_list representation of the graph :-
-    def Gprint(self) -> None :
-        print(self.gdict)
+# Creating a graph with empty lists as values
+for i in range(n) :
+    graph[i] = []
 
+# Entering vlues in the graph 
+ipt = [[0, 1], [0, 2], [0, 3],
+       [0, 4], [1, 3], [2, 3],
+       [2, 4], [2, 5], [3, 5]]
 
-# Initializing the graph dictionary :-
-gdict = {
-    77 : ['Om'],
-    70 : ['Anand'],
-    525 : ['Rohit'],
-    86 : ['Sinha']
-}
+for (u, v) in ipt :
+    graph[u].append(v)
+    graph[v].append(u)
 
-# Creating the graph :-
-root = Graph(gdict)
+# Printing the graph
+for x in graph.keys() :
+    print(x, ":", graph[x])
 
-# Printing the list of vertices :-
-root.vrtxList()
-
-# Adding a vertex :-
-root.addVrtx(90)
-root.vrtxList()
-
-# Prinitng the graph :-
-root.Gprint()
-
-# Adding edges to the graph :-
-root.addEdge(90, 'Sourav')
-root.addEdge(420, 'Abhiraj')
-root.addEdge(77, 'Shree')
-root.Gprint()
-
-            
