@@ -21,6 +21,8 @@ for x in graph.keys() :
 '''
 
 
+
+
 # DFS traversal :-
 def dfs(graph, node, visited=set()) -> None :
     print(node)
@@ -33,6 +35,9 @@ def dfs(graph, node, visited=set()) -> None :
 # Call the DFS function :-
 dfs(graph, 0)
 '''
+
+
+
 
 
 
@@ -64,8 +69,11 @@ print(ans)
 '''
 
 
+
+
+
+
 # Connected components : return the list of connected components :-
-ans = {}
 visited = set()
 
 # Initialising a new graph for this function
@@ -98,4 +106,6 @@ def ccList(graph) :
             ans.append(dfsUtilList(g, node, visited, temp))
     return ans
 
+'''
 print(ccList(g))
+'''
