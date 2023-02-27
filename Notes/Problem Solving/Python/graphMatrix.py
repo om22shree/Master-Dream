@@ -19,5 +19,6 @@ ipt = [[0, 1], [0, 2], [0, 3],
 for (u, v) in ipt :
     graph[u][v] = graph[v][u] = 1
 
+# Printing the graph
 for x in graph :
     print(x)
