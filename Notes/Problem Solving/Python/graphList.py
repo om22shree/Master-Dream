@@ -105,7 +105,7 @@ def ccList(graph) :
             temp = []
             ans.append(dfsUtilList(g, node, visited, temp))
     return ans
-
+ 
 '''
 print(ccList(g))
 '''
